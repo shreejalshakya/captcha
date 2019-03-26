@@ -8,7 +8,7 @@ import { AppCaptchaComponent } from '../app-captcha.component';
   imports: [
     CommonModule,
     BotDetectCaptchaModule.forRoot({
-      captchaEndpoint: 'http://localhost:9000/captcha'
+      captchaEndpoint: 'http://localhost:9000/botDetectCaptcha'
     }),
   ],
   declarations: [AppCaptchaComponent],
