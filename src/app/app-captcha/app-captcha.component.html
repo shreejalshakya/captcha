@@ -1,0 +1,12 @@
+<div class="captcha-container">
+  <span class="captcha-title">Retype the characters from the picture:</span>
+  <br>
+  <botdetect-captcha class="captcha-img" styleName="captchaCode" onload="change();"></botdetect-captcha>
+  <div class="captcha-input">
+    <input class="captcha-text-input" type="text" placeholder="Type here" id="captchaCode" name="captchaCode" #captchaCode>
+    <button class="captcha-button" type="button" (click)="validate(captchaCode.value);">Validate</button>
+  </div>
+  <div class="captcha-message">
+    <span *ngIf="errorMessage !== null" class="captcha-message text-danger">{{errorMessage}}</span>
+  </div>
+</div>
